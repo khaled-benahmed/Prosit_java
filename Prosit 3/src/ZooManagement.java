@@ -1,4 +1,5 @@
 //Instruction 3
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ZooManagement {
@@ -30,12 +31,12 @@ public class ZooManagement {
          En effet, les classes "Animal" et "Zoo" ne possèdent pas de constructeurs par défaut
           (constructeurs sans paramètres) car j'ai déjà défini des constructeurs paramétrés dans ces classes.*/
 
-        //Instruction 7 :
+       //Instruction 7 :
         Animal lion = new Animal("Félin", "Lion", 5, true);
         Zoo myZoo = new Zoo("Belvédère", "Tunis", 10);
         //Instruction 8 :
 
-        System.out.println(myZoo);
+        /*System.out.println(myZoo);
         System.out.println(myZoo.toString());
         //Je remarque que les deux instructions affichent le même résultat, qui est le nom de la classe suivi de l'adresse mémoire de l'objet.Zoo@eed1f14
 
@@ -51,7 +52,7 @@ public class ZooManagement {
         at Zoo.addAnimal(Zoo.java:26)
         at ZooManagement.main(ZooManagement.java:51)*/
 
-        //Instruction 11 :
+       /* //Instruction 11 :
 
         // Affichez les animaux du zoo
         myZoo.displayAnimals();
@@ -70,6 +71,16 @@ public class ZooManagement {
         //Instruction 13 :
         System.out.println("Suppression. de Lion : " + myZoo.removeAnimal(lion)); // Suppression réussi
         // Affichez les animaux du zoo
-        myZoo.displayAnimals();
+        myZoo.displayAnimals();*/
+
+        //Instruction 15 :
+        //Vérifiez si le zoo est plein
+        boolean isFull = myZoo.isZooFull();
+        System.out.println("le zoo et plein ?"+isFull);
+
+        //Instruction 16 :
+        //Affiche de zoo le plux d'animaux
+        Zoo zooPlusPlien = Zoo.comparerZoo(new Zoo("Zoo 1", "Ville 1", 3),new Zoo("Zoo 2", "Ville 2", 1));
+        System.out.println("Le zoo avec le plus d'animaux est :"+zooPlusPlien.name);
     }
 }

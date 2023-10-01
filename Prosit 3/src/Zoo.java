@@ -2,12 +2,13 @@ public class Zoo {
     Animal[] animals;
     String name;
      String city;
-     int nbrCages;
+    //Instruction 14 :
+
+    final int nbrCages = 25;
      int nbrAnimal = 0;
 
     public Zoo(String name ,String city,int nbrCages){
          animals = new Animal[nbrCages];
-         this.nbrCages = nbrCages;
          this.name = name;
          this.city = city;
      }
@@ -58,5 +59,14 @@ public class Zoo {
             return true;
         }
         return false;
+    }
+    //Instruction 15 :
+    public boolean isZooFull() {
+        return nbrCages >= nbrAnimal;
+    }
+    public static Zoo comparerZoo(Zoo z1, Zoo z2){
+        if (z1.nbrAnimal < z2.nbrAnimal)
+            return z2;
+        else return z1;
     }
 }
