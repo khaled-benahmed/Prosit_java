@@ -1,5 +1,3 @@
-# Prosit-2
-# Instructions for GitHub Repository README
 
 ## Zoo and Animal Classes
 
