@@ -1,6 +1,5 @@
-//Instruction 3
-import java.sql.SQLOutput;
-import java.util.Scanner;
+package tn.esprit.gestionzoo.main;//Instruction 3
+import tn.esprit.gestionzoo.entities.*;
 
 public class ZooManagement {
 
@@ -22,23 +21,23 @@ public class ZooManagement {
 
         //Instruction 5
 
-       // Animal lion = new Animal();
-       // Zoo myZoo = new Zoo();
+        // Animal lion = new Animal();
+        // Zoo myZoo = new Zoo();
 
         //Instruction 6 :
         //Que remarquez-vous au niveau de la méthode main ?
         /*Je remarque au niveau de la méthode main que j'obtiendrai une erreur de compilation.
-         En effet, les classes "Animal" et "Zoo" ne possèdent pas de constructeurs par défaut
+         En effet, les classes "Animal" et "tn.esprit.gestionzoo.entities.Zoo" ne possèdent pas de constructeurs par défaut
           (constructeurs sans paramètres) car j'ai déjà défini des constructeurs paramétrés dans ces classes.*/
 
-       //Instruction 7 :
-        Animal lion = new Animal("Félin", "Lion", 5, true);
-        Zoo myZoo = new Zoo("Belvédère", "Tunis", 10);
+        //Instruction 7 :
+        //Animal lion = new Animal("Félin", "Lion", -1, true);
+        Zoo myZoo = new Zoo("", "Tunis", 10);
         //Instruction 8 :
 
         /*System.out.println(myZoo);
         System.out.println(myZoo.toString());
-        //Je remarque que les deux instructions affichent le même résultat, qui est le nom de la classe suivi de l'adresse mémoire de l'objet.Zoo@eed1f14
+        //Je remarque que les deux instructions affichent le même résultat, qui est le nom de la classe suivi de l'adresse mémoire de l'objet.tn.esprit.gestionzoo.entities.Zoo@eed1f14
 
         // Créez des animaux
         Animal elephant = new Animal("Mammifère", "Éléphant", 10, true);
@@ -49,8 +48,8 @@ public class ZooManagement {
         System.out.println("Ajout d'Éléphant : " + myZoo.addAnimal(elephant)); // Ajout réussi
         System.out.println("Ajout de Serpent : " + myZoo.addAnimal(snake)); // Ajout échoué
         /*Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
-        at Zoo.addAnimal(Zoo.java:26)
-        at ZooManagement.main(ZooManagement.java:51)*/
+        at Zoo.addAnimal(tn.esprit.gestionzoo.entities.Zoo.java:26)
+        at ZooManagement.main(tn.esprit.gestionzoo.main.ZooManagement.java:51)*/
 
        /* //Instruction 11 :
 
@@ -75,12 +74,35 @@ public class ZooManagement {
 
         //Instruction 15 :
         //Vérifiez si le zoo est plein
-        boolean isFull = myZoo.isZooFull();
-        System.out.println("le zoo et plein ?"+isFull);
+        //boolean isFull = myZoo.isZooFull();
+        //System.out.println("le zoo et plein ?"+isFull);
 
-        //Instruction 16 :
-        //Affiche de zoo le plux d'animaux
-        Zoo zooPlusPlien = Zoo.comparerZoo(new Zoo("Zoo 1", "Ville 1", 3),new Zoo("Zoo 2", "Ville 2", 1));
-        System.out.println("Le zoo avec le plus d'animaux est :"+zooPlusPlien.name);
+        // Instruction 16 :
+        // Affiche de zoo le plux d'animaux
+        // Zoo zooPlusPlien = Zoo.comparerZoo(new Zoo("Zoo 1", "Ville 1", 3),new Zoo("Zoo 2", "Ville 2", 1));
+        // System.out.println("Le zoo avec le plus d'animaux est :"+zooPlusPlien.getName());
+
+        //Instruction 21 :
+        //Aquatic aquatic = new Aquatic();
+        //Terrestrial terrestrial = new Terrestrial();
+        //Dolphin dolphin = new Dolphin();
+        //Penguin penguin = new Penguin();
+
+        //Instruction 22 :
+        Aquatic aquatic1 = new Aquatic("Turtle", "NinjaTurtle", 100, false, "Sea");
+        Terrestrial terrestrial1 = new Terrestrial("camel", "camel", 4, true, 2);
+        Dolphin dolphin1 = new Dolphin("Yoyo", "dolly", 5, true, "Ocean", 25.0f);
+            Penguin penguin1 = new Penguin(" King penguin", "Icecream", 3, false, "Ocean", 325.3f);
+
+        //Instruction 23 :
+        System.out.println(aquatic1);
+        System.out.println(terrestrial1);
+        System.out.println(dolphin1);
+        System.out.println(penguin1);
+
+        aquatic1.swim();
+        dolphin1.swim();
+        penguin1.swim();
+        // le message affiché pour le dauphin est defférent car la classe Dolphin a redéfini (override) la méthode swim() pour afficher un message spécifique
     }
 }
