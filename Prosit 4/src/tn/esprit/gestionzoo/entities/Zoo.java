@@ -1,48 +1,81 @@
+package tn.esprit.gestionzoo.entities;
 public class Zoo {
-    Animal[] animals;
-    String name;
-     String city;
+    private Animal[] animals;
+    private String name;
+    private String city;
     //Instruction 14 :
 
     final int nbrCages = 25;
-     int nbrAnimal = 0;
+    private int nbrAnimal = 0;
 
     public Zoo(String name ,String city,int nbrCages){
-         animals = new Animal[nbrCages];
-         this.name = name;
-         this.city = city;
-     }
+        animals = new Animal[nbrCages];
+        this.name = name;
+        this.city = city;
+        setName(name);
+    }
 
     public void displayZoo() {
-        System.out.println("Zoo Name: " + name);
+        System.out.println("tn.esprit.gestionzoo.entities.Zoo Name: " + name);
         System.out.println("City: " + city);
         System.out.println("Number of Cages: " + nbrCages);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (!name.isEmpty())
+            this.name = name;
+        else System.out.println("Le nom de zoo ne peut pas etre vide");
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getNbrCages() {
+        return nbrCages;
+    }
+
+    public int getNbrAnimal() {
+        return nbrAnimal;
+    }
+
+    public void setNbrAnimal(int nbrAnimal) {
+        this.nbrAnimal = nbrAnimal;
+    }
+
     //Instruction 9 :
     @Override
     public String toString() {
-        return "Zoo Name: " + name + "\nCity: " + city + "\nNumber of Cages: " + nbrCages;
+        return " Name: " + name + "\nCity: " + city + "\nNumber of Cages: " + nbrCages;
     }
     //Instruction 10 :
     public boolean addAnimal(Animal animal){
 
-        if (nbrCages>=nbrAnimal && searchAnimal(animal) == -1 ){
-        animals[nbrAnimal]= animal;
-        nbrAnimal++;
-        return true;
+        if (!isZooFull() && searchAnimal(animal) == -1 ){
+            animals[nbrAnimal]= animal;
+            nbrAnimal++;
+            return true;
         }
-            return false;
+        return false;
     }
     public void displayAnimals() {
         System.out.println("Animaux dans le zoo :");
         for (int i = 0; i < nbrAnimal; i++) {
-                System.out.println(i + "-> " + animals[i].name);
+            System.out.println(i + "-> " + animals[i].getName());
         }
     }
 
     public int searchAnimal(Animal animal) {
         for (int i = 0; i < nbrAnimal; i++) {
-            if ( animals[i].name.equals(animal.name)) {
+            if ( animals[i].getName().equals(animal.getName())) {
                 return i;
             }
         }
