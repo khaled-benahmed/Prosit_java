@@ -1,16 +1,21 @@
 
 ## Zoo and Animal Classes (Continued)
 
-### Instruction 14
+### Instruction 17
 
-Modify the "nbrCages" attribute in the "Zoo" class by making it a constant. Remember that a zoo can contain a maximum of 25 animals. Make the necessary changes in the constructor to accommodate this constant.
+Your manager suggests modifying the "addAnimal" method to include the previously created "isZooFull()" method.
 
-### Instruction 15
+### Instruction 18
 
-Create the method "boolean isZooFull()" in the "Zoo" class. This method checks if the zoo is full based on the number of animals and the number of cages.
+To protect the various characteristics of the created objects, your superior asks you to restrict access to the attributes of the "Animal" and "Zoo" classes, taking the following points into consideration:
 
-### Instruction 16
+- An animal cannot have a negative age.
+- The name of a zoo must not be empty.
 
-Create a method "Zoo compareZoo(Zoo z1, Zoo z2)" in the "Zoo" class. This method takes two objects of type "Zoo" as parameters and returns the zoo with the most animals.
+Fix these errors to ensure data integrity.
 
-These additional instructions will further enhance the functionality of your zoo management system. Please document these changes and additions in your GitHub repository's README.
+### Instruction 19
+
+To organize your code, your manager requests that you use the packages "tn.esprit.gestionzoo.main" and "tn.esprit.gestionzoo.entities" for your classes.
+
+These instructions will further refine your project and ensure code quality. Be sure to update your GitHub repository's README with these changes and any additional documentation required.
