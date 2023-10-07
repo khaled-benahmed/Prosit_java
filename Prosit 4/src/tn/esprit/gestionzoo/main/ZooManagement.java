@@ -1,10 +1,11 @@
-//Instruction 3
-import java.util.Scanner;
+package tn.esprit.gestionzoo.main;//Instruction 3
+import tn.esprit.gestionzoo.entities.Zoo;
+import tn.esprit.gestionzoo.entities.Animal;
 
 public class ZooManagement {
 
     public static void main(String[] args) {
-        /*ZooManagement zm = new ZooManagement();
+        /*tn.esprit.gestionzoo.main.ZooManagement zm = new tn.esprit.gestionzoo.main.ZooManagement();
         System.out.println(zm.zooName + " comporte " + zm.nbrCages);*/
 
 
@@ -13,7 +14,7 @@ public class ZooManagement {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez saisir le nombre de cages souhaité:");
         int nbrCagesSaisie = sc.nextInt();
-        ZooManagement zm1 = new ZooManagement();
+        tn.esprit.gestionzoo.main.ZooManagement zm1 = new tn.esprit.gestionzoo.main.ZooManagement();
         zm1.nbrCages = nbrCagesSaisie;
         //Etape optionelle
         zm1.zooName = "notMyZoo";
@@ -21,23 +22,23 @@ public class ZooManagement {
 
         //Instruction 5
 
-       // Animal lion = new Animal();
-       // Zoo myZoo = new Zoo();
+        // Animal lion = new Animal();
+        // tn.esprit.gestionzoo.entities.Zoo myZoo = new tn.esprit.gestionzoo.entities.Zoo();
 
         //Instruction 6 :
         //Que remarquez-vous au niveau de la méthode main ?
         /*Je remarque au niveau de la méthode main que j'obtiendrai une erreur de compilation.
-         En effet, les classes "Animal" et "Zoo" ne possèdent pas de constructeurs par défaut
+         En effet, les classes "Animal" et "tn.esprit.gestionzoo.entities.Zoo" ne possèdent pas de constructeurs par défaut
           (constructeurs sans paramètres) car j'ai déjà défini des constructeurs paramétrés dans ces classes.*/
 
         //Instruction 7 :
-        Animal lion = new Animal("Félin", "Lion", 5, true);
-        Zoo myZoo = new Zoo("Belvédère", "Tunis", 10);
+        Animal lion = new Animal("Félin", "Lion", -1, true);
+        Zoo myZoo = new Zoo("", "Tunis", 10);
         //Instruction 8 :
 
-        System.out.println(myZoo);
+        /*System.out.println(myZoo);
         System.out.println(myZoo.toString());
-        //Je remarque que les deux instructions affichent le même résultat, qui est le nom de la classe suivi de l'adresse mémoire de l'objet.Zoo@eed1f14
+        //Je remarque que les deux instructions affichent le même résultat, qui est le nom de la classe suivi de l'adresse mémoire de l'objet.tn.esprit.gestionzoo.entities.Zoo@eed1f14
 
         // Créez des animaux
         Animal elephant = new Animal("Mammifère", "Éléphant", 10, true);
@@ -48,10 +49,10 @@ public class ZooManagement {
         System.out.println("Ajout d'Éléphant : " + myZoo.addAnimal(elephant)); // Ajout réussi
         System.out.println("Ajout de Serpent : " + myZoo.addAnimal(snake)); // Ajout échoué
         /*Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
-        at Zoo.addAnimal(Zoo.java:26)
-        at ZooManagement.main(ZooManagement.java:51)*/
+        at tn.esprit.gestionzoo.entities.Zoo.addAnimal(tn.esprit.gestionzoo.entities.Zoo.java:26)
+        at tn.esprit.gestionzoo.main.ZooManagement.main(tn.esprit.gestionzoo.main.ZooManagement.java:51)*/
 
-        //Instruction 11 :
+       /* //Instruction 11 :
 
         // Affichez les animaux du zoo
         myZoo.displayAnimals();
@@ -70,6 +71,16 @@ public class ZooManagement {
         //Instruction 13 :
         System.out.println("Suppression. de Lion : " + myZoo.removeAnimal(lion)); // Suppression réussi
         // Affichez les animaux du zoo
-        myZoo.displayAnimals();
+        myZoo.displayAnimals();*/
+
+        //Instruction 15 :
+        //Vérifiez si le zoo est plein
+        boolean isFull = myZoo.isZooFull();
+        System.out.println("le zoo et plein ?"+isFull);
+
+        //Instruction 16 :
+        //Affiche de zoo le plux d'animaux
+        Zoo zooPlusPlien = Zoo.comparerZoo(new Zoo("Zoo 1", "Ville 1", 3),new Zoo("tn.esprit.gestionzoo.entities.Zoo 2", "Ville 2", 1));
+        System.out.println("Le zoo avec le plus d'animaux est :"+zooPlusPlien.getName());
     }
 }
