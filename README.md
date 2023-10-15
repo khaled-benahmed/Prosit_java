@@ -1,16 +1,40 @@
+# Instructions for GitHub Repository README (Continued)
 
 ## Zoo and Animal Classes (Continued)
 
-### Instruction 14
+### Instruction 20
 
-Modify the "nbrCages" attribute in the "Zoo" class by making it a constant. Remember that a zoo can contain a maximum of 25 animals. Make the necessary changes in the constructor to accommodate this constant.
+To simplify the management of animals in our zoos, we distinguish two main families of animals: Aquatic and Terrestrial.
 
-### Instruction 15
+- An aquatic animal is characterized by the "habitat" (String) attribute, indicating its living environment.
+- A terrestrial animal is characterized by the "nbrLegs" (int) attribute, indicating the number of legs.
 
-Create the method "boolean isZooFull()" in the "Zoo" class. This method checks if the zoo is full based on the number of animals and the number of cages.
+Additionally, an aquatic animal can be:
 
-### Instruction 16
+- A dolphin (Dolphin), characterized by the "swimmingSpeed" (float) attribute, indicating its swimming speed.
+- A penguin (Penguin), characterized by the "swimmingDepth" (float) attribute, describing the depth it can swim underwater.
 
-Create a method "Zoo compareZoo(Zoo z1, Zoo z2)" in the "Zoo" class. This method takes two objects of type "Zoo" as parameters and returns the zoo with the most animals.
+Create these classes by declaring only the attributes.
 
-These additional instructions will further enhance the functionality of your zoo management system. Please document these changes and additions in your GitHub repository's README.
+### Instruction 21
+
+In the "main" method, create an instance of each class created previously using the default constructors.
+
+### Instruction 22
+
+Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
+
+### Instruction 23
+
+Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
+
+### Instruction 24
+
+Create the "public void swim()" method in the following classes:
+
+- "Aquatic," which displays the message: "This aquatic animal is swimming."
+- "Dolphin," which displays the message: "This dolphin is swimming."
+
+Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
+
+These instructions will further enhance your project's functionality and organization. Make sure to update your GitHub repository's README with these changes and any additional documentation.
