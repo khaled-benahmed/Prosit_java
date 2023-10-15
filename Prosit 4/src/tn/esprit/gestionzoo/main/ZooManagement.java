@@ -1,10 +1,14 @@
 package tn.esprit.gestionzoo.main;//Instruction 3
+import tn.esprit.gestionzoo.entities.*;
 import tn.esprit.gestionzoo.entities.Zoo;
 import tn.esprit.gestionzoo.entities.Animal;
+
 
 public class ZooManagement {
 
     public static void main(String[] args) {
+        /*ZooManagement zm = new ZooManagement();
+=======
         /*tn.esprit.gestionzoo.main.ZooManagement zm = new tn.esprit.gestionzoo.main.ZooManagement();
         System.out.println(zm.zooName + " comporte " + zm.nbrCages);*/
 
@@ -14,6 +18,8 @@ public class ZooManagement {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez saisir le nombre de cages souhaité:");
         int nbrCagesSaisie = sc.nextInt();
+        ZooManagement zm1 = new ZooManagement();
+=======
         tn.esprit.gestionzoo.main.ZooManagement zm1 = new tn.esprit.gestionzoo.main.ZooManagement();
         zm1.nbrCages = nbrCagesSaisie;
         //Etape optionelle
@@ -23,6 +29,7 @@ public class ZooManagement {
         //Instruction 5
 
         // Animal lion = new Animal();
+        // Zoo myZoo = new Zoo();
         // tn.esprit.gestionzoo.entities.Zoo myZoo = new tn.esprit.gestionzoo.entities.Zoo();
 
         //Instruction 6 :
@@ -32,6 +39,7 @@ public class ZooManagement {
           (constructeurs sans paramètres) car j'ai déjà défini des constructeurs paramétrés dans ces classes.*/
 
         //Instruction 7 :
+        //Animal lion = new Animal("Félin", "Lion", -1, true);
         Animal lion = new Animal("Félin", "Lion", -1, true);
         Zoo myZoo = new Zoo("", "Tunis", 10);
         //Instruction 8 :
@@ -49,6 +57,8 @@ public class ZooManagement {
         System.out.println("Ajout d'Éléphant : " + myZoo.addAnimal(elephant)); // Ajout réussi
         System.out.println("Ajout de Serpent : " + myZoo.addAnimal(snake)); // Ajout échoué
         /*Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+        at Zoo.addAnimal(tn.esprit.gestionzoo.entities.Zoo.java:26)
+        at ZooManagement.main(tn.esprit.gestionzoo.main.ZooManagement.java:51)*/
         at tn.esprit.gestionzoo.entities.Zoo.addAnimal(tn.esprit.gestionzoo.entities.Zoo.java:26)
         at tn.esprit.gestionzoo.main.ZooManagement.main(tn.esprit.gestionzoo.main.ZooManagement.java:51)*/
 
@@ -75,6 +85,36 @@ public class ZooManagement {
 
         //Instruction 15 :
         //Vérifiez si le zoo est plein
+        //boolean isFull = myZoo.isZooFull();
+        //System.out.println("le zoo et plein ?"+isFull);
+
+        // Instruction 16 :
+        // Affiche de zoo le plux d'animaux
+        // Zoo zooPlusPlien = Zoo.comparerZoo(new Zoo("Zoo 1", "Ville 1", 3),new Zoo("Zoo 2", "Ville 2", 1));
+        // System.out.println("Le zoo avec le plus d'animaux est :"+zooPlusPlien.getName());
+
+        //Instruction 21 :
+        //Aquatic aquatic = new Aquatic();
+        //Terrestrial terrestrial = new Terrestrial();
+        //Dolphin dolphin = new Dolphin();
+        //Penguin penguin = new Penguin();
+
+        //Instruction 22 :
+        Aquatic aquatic1 = new Aquatic("Turtle", "NinjaTurtle", 100, false, "Sea");
+        Terrestrial terrestrial1 = new Terrestrial("camel", "camel", 4, true, 2);
+        Dolphin dolphin1 = new Dolphin("Yoyo", "dolly", 5, true, "Ocean", 25.0f);
+            Penguin penguin1 = new Penguin(" King penguin", "Icecream", 3, false, "Ocean", 325.3f);
+
+        //Instruction 23 :
+        System.out.println(aquatic1);
+        System.out.println(terrestrial1);
+        System.out.println(dolphin1);
+        System.out.println(penguin1);
+
+        aquatic1.swim();
+        dolphin1.swim();
+        penguin1.swim();
+        // le message affiché pour le dauphin est defférent car la classe Dolphin a redéfini (override) la méthode swim() pour afficher un message spécifique
         boolean isFull = myZoo.isZooFull();
         System.out.println("le zoo et plein ?"+isFull);
 
