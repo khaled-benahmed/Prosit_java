@@ -1,4 +1,3 @@
-# Instructions for GitHub Repository README (Continued)
 
 ## Zoo and Animal Classes (Continued)
 
@@ -37,4 +36,3 @@ Create the "public void swim()" method in the following classes:
 
 Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
 
-These instructions will further enhance your project's functionality and organization. Make sure to update your GitHub repository's README with these changes and any additional documentation.
