@@ -17,6 +17,8 @@ public class Zoo {
 
     public void displayZoo() {
         System.out.println("Zoo Name: " + name);
+        System.out.println("tn.esprit.gestionzoo.entities.Zoo Name: " + name);
+
         System.out.println("City: " + city);
         System.out.println("Number of Cages: " + nbrCages);
     }

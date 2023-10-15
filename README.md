@@ -36,3 +36,24 @@ Create the "public void swim()" method in the following classes:
 
 Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
 
+
+### Instruction 21
+
+In the "main" method, create an instance of each class created previously using the default constructors.
+
+### Instruction 22
+
+Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
+
+### Instruction 23
+
+Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
+
+### Instruction 24
+
+Create the "public void swim()" method in the following classes:
+
+- "Aquatic," which displays the message: "This aquatic animal is swimming."
+- "Dolphin," which displays the message: "This dolphin is swimming."
+
+Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
