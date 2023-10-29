@@ -1,59 +1,31 @@
 
 ## Zoo and Animal Classes (Continued)
 
-### Instruction 20
+### Instruction 25
 
-To simplify the management of animals in our zoos, we distinguish two main families of animals: Aquatic and Terrestrial.
+In the "Zoo" class, create an array called "aquaticAnimals" that can hold up to 10 aquatic animals.
 
-- An aquatic animal is characterized by the "habitat" (String) attribute, indicating its living environment.
-- A terrestrial animal is characterized by the "nbrLegs" (int) attribute, indicating the number of legs.
+### Instruction 26
 
-Additionally, an aquatic animal can be:
+Create the method "public void addAquaticAnimal(Aquatic aquatic)" in the "Zoo" class. This method allows you to add aquatic animals to the "aquaticAnimals" array. Add aquatic animals in the "main" method in a zoo.
 
-- A dolphin (Dolphin), characterized by the "swimmingSpeed" (float) attribute, indicating its swimming speed.
-- A penguin (Penguin), characterized by the "swimmingDepth" (float) attribute, describing the depth it can swim underwater.
+### Instruction 27
 
-Create these classes by declaring only the attributes.
+Display the "swim()" method for all aquatic animals in your zoo. Take note of your observations.
 
-### Instruction 21
+### Instruction 28
 
-In the "main" method, create an instance of each class created previously using the default constructors.
+Modify the "swim()" method in the "Aquatic" class so that it must be overridden in all child classes.
 
-### Instruction 22
+### Instruction 29
 
-Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
+Create the method "public float maxPenguinSwimmingDepth()" in the "Zoo" class. This method returns the maximum swimming depth of your penguins in the zoo.
 
-### Instruction 23
+### Instruction 30
 
-Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
+Create the method "public void displayNumberOfAquaticsByType()" in the "Zoo" class. This method displays the number of dolphins and penguins in a zoo.
 
-### Instruction 24
+### Instruction 31
 
-Create the "public void swim()" method in the following classes:
+Override the "equals()" method in the "Aquatic" class. Two aquatic animals are identical only if they have the same name, age, and habitat.
 
-- "Aquatic," which displays the message: "This aquatic animal is swimming."
-- "Dolphin," which displays the message: "This dolphin is swimming."
-
-Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
-
-
-### Instruction 21
-
-In the "main" method, create an instance of each class created previously using the default constructors.
-
-### Instruction 22
-
-Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
-
-### Instruction 23
-
-Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
-
-### Instruction 24
-
-Create the "public void swim()" method in the following classes:
-
-- "Aquatic," which displays the message: "This aquatic animal is swimming."
-- "Dolphin," which displays the message: "This dolphin is swimming."
-
-Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
