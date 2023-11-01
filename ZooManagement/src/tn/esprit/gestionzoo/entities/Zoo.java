@@ -60,14 +60,16 @@ public class Zoo {
         return " Name: " + name + "\nCity: " + city + "\nNumber of Cages: " + nbrCages;
     }
     //Instruction 10 :
-    public boolean addAnimal(Animal animal){
+    public void addAnimal(Animal animal) throws ZooFullException,InvalidAgeException{
 
-        if (!isZooFull() && searchAnimal(animal) == -1 ){
+        if (animal.getAge() < 0) {
+            throw new InvalidAgeException("Invalid age: " + animal.getAge());
+        }
+        if (nbrAnimal<nbrCages) {
             animals[nbrAnimal]= animal;
             nbrAnimal++;
-            return true;
         }
-        return false;
+        else throw new ZooFullException("Zoo is full !!! cannot add animal");
     }
     public void displayAnimals() {
         System.out.println("Animaux dans le zoo :");
