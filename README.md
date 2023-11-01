@@ -1,59 +1,17 @@
+# Instructions for GitHub Repository README (Continued)
 
 ## Zoo and Animal Classes (Continued)
 
-### Instruction 20
+### Instruction 32
 
-To simplify the management of animals in our zoos, we distinguish two main families of animals: Aquatic and Terrestrial.
+Modify the return type of the "addAnimal(Animal animal)" method from boolean to void and remove the tests that check whether the zoo is full.
 
-- An aquatic animal is characterized by the "habitat" (String) attribute, indicating its living environment.
-- A terrestrial animal is characterized by the "nbrLegs" (int) attribute, indicating the number of legs.
+### Instruction 33
 
-Additionally, an aquatic animal can be:
+Create your own exception class called "ZooFullException." The "addAnimal" method should now use this new exception. Correct the errors in the "main" method, keeping in mind that your program should always display the number of animals after each addition. Reduce the number of cages to 3 and test your code.
 
-- A dolphin (Dolphin), characterized by the "swimmingSpeed" (float) attribute, indicating its swimming speed.
-- A penguin (Penguin), characterized by the "swimmingDepth" (float) attribute, describing the depth it can swim underwater.
+### Instruction 34
 
-Create these classes by declaring only the attributes.
+We want to disallow adding an animal with a negative age and should throw an exception. Create a class called "InvalidAgeException" to handle this exception. Correct the errors in the "main" method.
 
-### Instruction 21
-
-In the "main" method, create an instance of each class created previously using the default constructors.
-
-### Instruction 22
-
-Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
-
-### Instruction 23
-
-Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
-
-### Instruction 24
-
-Create the "public void swim()" method in the following classes:
-
-- "Aquatic," which displays the message: "This aquatic animal is swimming."
-- "Dolphin," which displays the message: "This dolphin is swimming."
-
-Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
-
-
-### Instruction 21
-
-In the "main" method, create an instance of each class created previously using the default constructors.
-
-### Instruction 22
-
-Create parameterized constructors in the subclasses. Ensure to protect the previously declared attributes.
-
-### Instruction 23
-
-Override the "toString()" method in the three subclasses to include both common and specific attributes. In the "main" method, display the objects created earlier.
-
-### Instruction 24
-
-Create the "public void swim()" method in the following classes:
-
-- "Aquatic," which displays the message: "This aquatic animal is swimming."
-- "Dolphin," which displays the message: "This dolphin is swimming."
-
-Call this method for three objects of types "Aquatic," "Dolphin," and "Penguin." Note your observations.
+These instructions are important for handling exceptions and ensuring that your program functions correctly. Update your GitHub repository's README to document these changes and additions.
