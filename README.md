@@ -1,4 +1,3 @@
-# Instructions for GitHub Repository README (Continued)
 
 ## Zoo and Animal Classes (Continued)
 
@@ -14,4 +13,3 @@ Create your own exception class called "ZooFullException." The "addAnimal" metho
 
 We want to disallow adding an animal with a negative age and should throw an exception. Create a class called "InvalidAgeException" to handle this exception. Correct the errors in the "main" method.
 
-These instructions are important for handling exceptions and ensuring that your program functions correctly. Update your GitHub repository's README to document these changes and additions.
