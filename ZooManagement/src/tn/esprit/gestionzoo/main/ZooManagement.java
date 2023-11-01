@@ -127,5 +127,13 @@ public class ZooManagement {
             aquatic.swim();
         }
 
+        try {
+            myZoo.addAnimal(lion);
+            myZoo.addAnimal(dolphin1);
+
+        } catch (ZooFullException | InvalidAgeException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
