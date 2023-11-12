@@ -1,31 +1,22 @@
+## ZooManagement (Continued)
 
-## Zoo and Animal Classes (Continued)
+### Instruction 35
 
-### Instruction 25
+Create the following interfaces:
 
-In the "Zoo" class, create an array called "aquaticAnimals" that can hold up to 10 aquatic animals.
+- `Carnivore<T>`: Defines the method `void eatMeat(T meat)`
+- `Herbivore<T>`: Defines the method `void eatPlant(T plant)`
+- `Omnivore<T>`: Inherits from the two previous interfaces and defines the method `void eatPlantAndMeat(T food)`
 
-### Instruction 26
+### Instruction 36
 
-Create the method "public void addAquaticAnimal(Aquatic aquatic)" in the "Zoo" class. This method allows you to add aquatic animals to the "aquaticAnimals" array. Add aquatic animals in the "main" method in a zoo.
+Create the enum `Food` that defines three values (MEAT, PLANT, BOTH).
 
-### Instruction 27
+### Instruction 37
 
-Display the "swim()" method for all aquatic animals in your zoo. Take note of your observations.
+Implement the `Carnivore` interface for the `Aquatic` class, passing the `Food` enumeration as a parameter. Implement the `Omnivore` interface for the `Terrestrial` class, also passing the `Food` enumeration as a parameter. Redefine the necessary methods.
 
-### Instruction 28
+### Instruction 38
 
-Modify the "swim()" method in the "Aquatic" class so that it must be overridden in all child classes.
-
-### Instruction 29
-
-Create the method "public float maxPenguinSwimmingDepth()" in the "Zoo" class. This method returns the maximum swimming depth of your penguins in the zoo.
-
-### Instruction 30
-
-Create the method "public void displayNumberOfAquaticsByType()" in the "Zoo" class. This method displays the number of dolphins and penguins in a zoo.
-
-### Instruction 31
-
-Override the "equals()" method in the "Aquatic" class. Two aquatic animals are identical only if they have the same name, age, and habitat.
+In the "main" method, create objects of type `Aquatic`, `Penguin`, and `Terrestrial`, and test the implemented methods.
 
