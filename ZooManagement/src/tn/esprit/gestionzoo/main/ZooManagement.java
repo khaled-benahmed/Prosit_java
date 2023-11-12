@@ -122,7 +122,7 @@ public class ZooManagement {
         myZoo.addAquaticAnimal(dolphin1);
         myZoo.addAquaticAnimal(aquatic1);
         myZoo.addAquaticAnimal(penguin1);
-
+/*
         for (Aquatic aquatic : myZoo.aquaticAnimals) {
             aquatic.swim();
         }
@@ -133,7 +133,14 @@ public class ZooManagement {
 
         } catch (ZooFullException | InvalidAgeException e) {
             System.out.println(e.getMessage());
-        }
+        }*/
+
+        dolphin1.eatMeat(Food.MEAT);
+        dolphin1.eatMeat(Food.PLANT);
+
+        dolphin1.eatMeat(Food.MEAT);
+        terrestrial1.eatPlant(Food.PLANT);
+        terrestrial1.eatPlantAndMeat(Food.BOTH);
 
     }
 }
