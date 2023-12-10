@@ -2,6 +2,7 @@ package tn.esprit.gestionzoo.main;//Instruction 3
 import tn.esprit.gestionzoo.entities.*;
 import tn.esprit.gestionzoo.entities.Zoo;
 import tn.esprit.gestionzoo.entities.Animal;
+import tn.esprit.gestionzoo.employe.*;
 
 
 public class ZooManagement {
@@ -141,6 +142,35 @@ public class ZooManagement {
         dolphin1.eatMeat(Food.MEAT);
         terrestrial1.eatPlant(Food.PLANT);
         terrestrial1.eatPlantAndMeat(Food.BOTH);
+
+        SocieteArrayList societé = new SocieteArrayList();
+        Employe employe1 = new Employe(1, 11, "emp1", "azer", "IT");
+        Employe employe3 = new Employe(2, 6, "emp2", "azer", "finance");
+        Employe employe2 = new Employe(3, 85, "emp3", "azer", "mgr");
+
+        societé.ajouterEmploye(employe1);
+        societé.ajouterEmploye(employe2);
+        societé.ajouterEmploye(employe3);
+
+        System.out.println("la list des employees:");
+        societé.displayEmploye();
+
+        String searchName = "emp1";
+        if (societé.rechercherEmploye(searchName)) {
+            System.out.println("Employee " + searchName + " found.");
+        } else {
+            System.out.println("Employee " + searchName + " not found.");
+        }
+
+        societé.trierEmployeParId();
+
+        System.out.println("la liste des employees par Id :");
+        societé.displayEmploye();
+
+        societé.trierEmployeParNomDepartementEtGrade();
+
+        System.out.println("la list des employees trier :");
+        societé.displayEmploye();
 
     }
 }
