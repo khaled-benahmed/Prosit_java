@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc14321-28b1-4e3a-9d5c-405eb49c724d" name="Changes" comment="Prosit 8 Updates" />
+    <list default="true" id="0bc14321-28b1-4e3a-9d5c-405eb49c724d" name="Changes" comment="Prosit 8 Updates">
+      <change afterPath="$PROJECT_DIR$/src/tn/esprit/gestionzoo/employe/Employe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tn/esprit/gestionzoo/employe/IGestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tn/esprit/gestionzoo/employe/SocieteArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -25,7 +31,7 @@
         <entry key="$PROJECT_DIR$/.." value="Prosit7" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
@@ -73,6 +79,9 @@
       <workItem from="1699186295842" duration="100000" />
       <workItem from="1699817918292" duration="2377000" />
       <workItem from="1699821866897" duration="195000" />
+      <workItem from="1700229850104" duration="348000" />
+      <workItem from="1701111745002" duration="593000" />
+      <workItem from="1702231744303" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="Prosit 6 Updates">
       <option name="closed" value="true" />
